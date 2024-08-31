@@ -165,9 +165,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 /* Header Section */
+#header{
+	margin-top: 110px;
+
+}
 .intro {
 	display: table;
 	width: 100%;
+	height: 100%;
 	padding: 0;
 	background: url("../img/main_image/pragdev\ 1\ .jpg") center center no-repeat;
 	background-color: #e5e5e5;
@@ -199,10 +204,28 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background: rgba(0,0,0,.45);
 }
 header .intro-text {
-	padding-top: 350px;
+	padding-top: 300px;
 	padding-bottom: 150px;
 	text-align: center;
 }
+
+/* home section */
+.image_section{
+   width: 100%;
+   overflow: hidden;
+   margin-top: 110px;
+
+}
+.image_div{
+	width: 100%;		
+	padding: 350px;
+	background-image: url("../img/main_image/pragdev\ 2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+}
+
 /* Get Touch Section */
 #get-touch {
 	padding: 40px 0 30px;
@@ -265,7 +288,7 @@ header .intro-text {
 }
 #about img {
 	padding: 20px;
-	width: 500px;
+	width: 430px;
 	margin-top: 10px;
 	background: #fff;
 	border-right: 0;
@@ -281,6 +304,7 @@ header .intro-text {
 }
 #services .service-media {
 	margin: 10px;
+	width: 320px;
 }
 #services .service-media img {
 	position: relative;
