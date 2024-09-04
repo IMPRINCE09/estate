@@ -7,6 +7,9 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+div{
+	overflow: hidden;
+}
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0 0 20px 0;
@@ -214,21 +217,38 @@ header .intro-text {
    width: 100%;
    overflow: hidden;
    margin-top: 110px;
-
+   position: relative;
+   
 }
-.image_div{
-	width: 100%;		
-	padding: 350px;
-	background-image: url("../img/main_image/pragdev\ 2.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-
+.section_home{
+ position: relative;
 }
+.section_home_text{
+	position: absolute;
+	top: 10%;
+	left: 7%;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 20px;
+	width: 364px;
+	
+}
+.div_image_font{
+	width: 100%;
+	height: 90vh;
+}
+
+@media only screen and (max-width:600px) {
+	.div_image_font{
+		width: 100%;
+		height: 100%;
+	}
+	
+}
+
 
 /* Get Touch Section */
 #get-touch {
-	padding: 40px 0 30px;
+	padding: 20px 0 30px;
 	color: rgba(255,255,255,.7);
 	background: #1f386e;
 }
@@ -250,7 +270,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 110px 0;
+	padding: 25px 0;
 	background: #f6f6f6;
 }
 #about h3 {
@@ -300,7 +320,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-	padding: 100px 0;
+	padding: 40px 0;
 }
 #services .service-media {
 	margin: 10px;
@@ -324,7 +344,7 @@ header .intro-text {
 }
 /* Portfolio Section */
 #portfolio {
-	padding: 100px 0;
+	padding: 40px 0;
 	background: #f6f6f6;
 }
 .portfolio-item {
@@ -365,6 +385,11 @@ header .intro-text {
 }
 .hover-bg:hover .hover-text {
 	opacity: 1;
+}
+.size_chart{
+	max-width: 800px;
+	max-height: 520px;
+	
 }
 /* Testimonials Section */
 #testimonials {
